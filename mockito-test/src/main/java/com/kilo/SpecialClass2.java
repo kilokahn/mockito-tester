@@ -1,0 +1,54 @@
+/*
+ * SpecialClass2.java
+ * 
+ * $HeadURL: $
+ * $Id: eclipse-codetemplates.xml 413456 2010-08-10 07:03:38Z baigm $
+ */
+
+/*
+ * Copyright (c) 2012 D. E. Shaw & Co., L.P. All rights reserved.
+ *  
+ * This software is the confidential and proprietary information
+ * of D. E. Shaw & Co., L.P. ("Confidential Information").  You
+ * shall not disclose such Confidential Information and shall use
+ * it only in accordance with the terms of the license agreement
+ * you entered into with D. E. Shaw & Co., L.P.
+ */
+
+package com.kilo;
+
+import org.apache.commons.lang.builder.ReflectionToStringBuilder;
+
+//@formatter:off
+/**
+ * @author baigm
+ * @version $Id: eclipse-codetemplates.xml 413456 2010-08-10 07:03:38Z baigm $
+ */
+//@formatter:on
+public class SpecialClass2 {
+
+    /**
+     * @param specialClass3
+     */
+    public SpecialClass2(SpecialClass3 specialClass3) {
+        this.specialClass3 = specialClass3;
+    }
+
+    private SpecialClass3 specialClass3;
+
+    public SpecialClass3 getSpecialClass3() {
+        return specialClass3;
+    }
+
+    public void setSpecialClass3(SpecialClass3 specialClass3) {
+        this.specialClass3 = specialClass3;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public String toString() {
+        return ReflectionToStringBuilder.toString(this);
+    }
+}
